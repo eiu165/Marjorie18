@@ -13,7 +13,7 @@ ul, ol {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
-a, a:link, a:visited, a:active, a:hover, .item:hover {
+a, a:link, a:hover, a:active, a:visited, .item:hover, item:active {
     cursor: crosshair;
     text-decoration: none;
     outline: none;
@@ -38,30 +38,29 @@ select::-ms-expand {
 }
 
 body {
+    height: 100%;
+    overflow:hidden;
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
+    color: #4d4d4e;
     font-size: 14px;
     line-height: 1;
 }
 marjblue {
     color: #40708a;
 }
-/*html {
-    height: 100%;
-    overflow:hidden;
-}*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 1. BOOTSTRAP
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-.container {
+/*-----------------------------------*/
+/* 1. BOOTSTRAP----------*/
+/*.container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
     height: 100%;
-}
-/*@media (min-width: 768px) {
+}*/
+@media (min-width: 768px) {
     .container {
         width: 730px;
     }
@@ -76,16 +75,9 @@ marjblue {
         width: 1170px;
     }
 }
-.container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-}*/
-.row {
-    margin-left: -15px;
+
+.row { 
     margin-left: 0px;
-    margin-right: -15px;
     margin-right: 0px;
 }
 /***** Preload */
@@ -116,7 +108,6 @@ marjblue {
     font-weight: 500;
     letter-spacing: 0.4em;
 }
-
     .loader::before, .loader::after {
         content: "";
         display: block;
@@ -191,10 +182,6 @@ body, html {
     body.full-h, html.full-h {
         height: 100%;
     }
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #4d4d4e;
-}
     body.overflow {
         overflow: hidden;
     }
@@ -206,22 +193,6 @@ body {
         line-height: 28px;
         font-weight: 500;     
     }
-
-    .simple-text.large p {
-        font-size: 36px;
-        line-height: 36px;
-    }
-
-    .simple-text.lg p {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .simple-text.mdl p {
-        font-size: 18px;
-        line-height: 34px;
-    }
-
     .simple-text.md p {
         font-size: 14px;
         line-height: 24px;
@@ -233,10 +204,6 @@ body {
         line-height: 19px;
         font-weight:700;
         color: #5b493c;        
-    }
-    .simple-text.xs p {
-        font-size: 14px;
-        line-height: 28px;
     }
 .sm-size{
     font-size:60%;
@@ -260,9 +227,7 @@ body {
     width: 100%;
     text-align: center;
 }
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* circle-shape */
-
+/*---------- circle-shape------- */
 .circle-shape {
     width: 8px;
     height: 8px;
@@ -271,52 +236,33 @@ body {
     background: #000;
     opacity: .2;
 }
-/*****  jarallax-container **************/
-body, html {
+/*****  jarallax-container *************/
+
+.main-content{
+    height: 30vh;
+}
+.MainContainer {
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+.main-content { 
+    height: 70vh;
+  /* display: block;
+   position: relative;
+   z-index:1;*/ 
+}
+#jarallax-container {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40vh;
+ /* margin-bottom: -130vh;*/
 }
 
-#jarallax-container {
-    background-image: url("img/studshow-02.jpg");
-    height: 40%;
-   background-attachment: fixed;
-   background-position: top;
-    background-repeat: no-repeat;
-    background-size:contain;
-}
-/*---------------------------------  
-    header and jarallax container 
-  --------------------------*/ 
-    @media (min-width: 992px) {
-        #jarallax-container {
-         height: 70%;
-        }
-   }
-    @media (max-width: 1400px) {
-        #jarallax-container {
-            height: 60%;
-        }
-    }
-    @media (max-width: 1200px) {
-        #jarallax-container {
-            height: 60%;
-        }
-    }
-    @media (max-width: 992px) {
-        #jarallax-container {
-            height: 52%;
-        }
-    }
-    @media (max-width: 768px) {
-        #jarallax-container {
-            height: 25%;
-        }
-    }
-    @media (max-width: 480px) {
-        #jarallax-container {
-            height: 20%;
-        }
-    }
+
 /*-----------------------------
     side-lidt-text
 -----------------------------*/
@@ -381,7 +327,6 @@ body, html {
     .slide-toggle-list {       
     }
 }
-
 /*-----------------------------
    .filter-list
 -----------------------------*/
@@ -437,24 +382,20 @@ body, html {
         -moz-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
     }
-
     .filter-list .tag-link-2:hover:before, .filter-list .tag-link-2.active:before {
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         transform: translateX(0%);
     }
-
     .filter-list .tag-link-2 span:hover, .filter-list .tag-link-2 span.active {
         color: #fff;
     }
-
     .mobile-toggle-slide .filter-list .tag-link-2.active, .mobile-toggle-slide .filter-list .tag-link-2:hover {
         color: #534733;
         font-family: 'Kaushan Script', cursive;
         font-size: 18px;
     }
-
     .tag-link-2 .bg {
         top: 0px;
         left: 0px;
@@ -476,19 +417,13 @@ body, html {
         .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
             height: 120px;
             display: inline-block;
-        }
-       
+        }       
 }
-
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 21. PROJECT PAGE IZOTOPE */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-* {
-    box-sizing: border-box
-}
+/*--------------------------*/
+/* IZOTOPE */
 .izotope-container {
     position: relative;
-background: #ddd;
+    background: #ddd;
  /*   height: 100%;
     width: 100%;
     margin:0 auto;*/
@@ -656,7 +591,6 @@ background: #ddd;
                 font-size: 12px;
             }
     }*/ 
-
     @media (max-width: 480px) {
         .grid-sizer,
         .item {
@@ -665,7 +599,6 @@ background: #ddd;
         .project-title {
            
         }
-
             .project-title .title-h2 {
                 font-size: 20px;
                 line-height: 20px;
@@ -680,25 +613,20 @@ background: #ddd;
         content: '\f1db';
     }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 2. main-content ABOUT/
+/* 2. ABOUT/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.main-content {  
-   position: relative;
-}
-   .main-content .solo-type {
+
+    .solo-type {
         height: 100vmin;
-        padding-bottom: 70px;
-    padding: 0px;
-    border-top-width: 0px;
 }
-    .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
+ /*   .solo-type .content-load, .main-content.solo-type .ajax-load-content {
             height: inherit;
         }
-    .main-content.solo-type, .main-content.solo-type .contact {
+    .solo-type, .solo-type .contact {
         height: 100vmin;
         padding: 0px;
         background-color: #fff;
-    }
+    }*/
     .solo-baner {
         background: #ebebe9;
         background: #c0c027;
@@ -877,19 +805,12 @@ background: #ddd;
             .circle-solo-point.point-circle-slider .slide-point:hover span, .circle-solo-point.point-circle-slider .slide-point.active span {
                 color: #4d4d4e;
             }
-
     .solo-page3 .left-column {
         width: 60%;
     }
-
     .solo-page3 .right-column {
         width: 40%;
     }
-
-    .slide-shadow img {
-        width: 100%;
-    }
-
     @media (max-width: 1800px) {
         .solo-main-title {
             padding: 0px 40px 0 90px;
@@ -917,7 +838,7 @@ background: #ddd;
             line-height: 50px;
         }
         .solo-baner {
-           padding: 66px 0px; 
+           padding: 0px; 
         }
     }
 
@@ -1041,7 +962,7 @@ background: #ddd;
     }
  /********contact******/
 
-.main-content .contact {
+ .contact {
         position: relative;
         height: 100%;
         padding: 45px 0px 20px;

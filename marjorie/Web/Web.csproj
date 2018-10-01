@@ -274,6 +274,8 @@
     <Content Include="js\jquery.fullpage.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.mousewheel.min.js" />
+    <Content Include="js\parallax.js-1.5.0\parallax.js" />
+    <Content Include="js\parallax.js-1.5.0\parallax.min.js" />
     <Content Include="js\scrollreveal.min.js" />
     <Content Include="js\swiper.jquery.min.js" />
     <Content Include="marjStyle.css" />
@@ -300,6 +302,10 @@
     <Content Include="fonts\fontello-145d0620\font\circle-thin.ttf" />
     <Content Include="fonts\fontello-145d0620\font\circle-thin.woff" />
     <Content Include="fonts\fontello-145d0620\font\circle-thin.woff2" />
+    <Content Include="js\parallax.js-1.5.0\bower.json" />
+    <Content Include="js\parallax.js-1.5.0\LICENSE" />
+    <Content Include="js\parallax.js-1.5.0\package.json" />
+    <Content Include="js\parallax.js-1.5.0\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
