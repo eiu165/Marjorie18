@@ -177,7 +177,7 @@ marj-brown {
 }
 .sub-title {
     font-size: 20px;
-    line-height: 50px;
+    line-height: 30px;
     font-weight: 700;
     color: #5b493c;
 }
@@ -204,7 +204,7 @@ marj-brown {
 }
 .padd-tb{
     padding: 30px 0px;
-}
+}padding_
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* circle-shape */
 
@@ -561,7 +561,7 @@ background-image: url("img/marj-name.png");
     .project-title .sub-title {
         margin-bottom: 10px;
         font-weight: 700;
-        padding-bottom: 15px;
+        padding-bottom: 7px;
     } 
 }
  @media (max-width: 480px) {
@@ -626,14 +626,14 @@ background-image: url("img/marj-name.png");
 }
 .left-desc {
     position: relative;
-    width: 55%;
+    width: 50%;
     float: left;
     overflow: hidden;
     background-color: #c98528;
 }   
 .right-desc {
         position: relative;
-        width: 45%;
+        width: 50%;
         float: left;
         overflow: hidden;
         background-color: #2a4f63;
@@ -692,7 +692,7 @@ background-image: url("img/marj-name.png");
   overflow: hidden;
 }
 .solo-baner .main-img img {
-              width: 100%;
+              width: 70%;
               height: auto;
  }
  .solo-main-title {
