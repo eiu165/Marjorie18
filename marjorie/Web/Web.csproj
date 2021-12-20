@@ -253,7 +253,13 @@
     <Content Include="img\vases\vsd04.jpg" />
     <Content Include="img\vases\vsd05.jpg" />
     <Content Include="img\vases\vsd06.jpg" />
-    <Content Include="img\vases\vsd07.jpg" />
+    <Content Include="img\vases\vsd07.jpg" />  
+    <Content Include="img\bowls\bowl21.jpg" />
+    <Content Include="img\bowls\bowl22.jpg" />
+    <Content Include="img\bowls\bowl23.jpg" />   
+    
+    
+    
     <Content Include="index.html" />
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
